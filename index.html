@@ -303,14 +303,14 @@ Solar energy is clean and green. Solar energy creates no air or water pollution,
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded overflow-hidden">
                         <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
+                        <div class="position-relative p-4 pt-0" id="read-more-container">
                             <div class="service-icon">
                                 <i class="fa fa-solar-panel fa-3x"></i>
                             </div>
                             <h4 class="mb-3">CCTV Installation</h4>
-                            <p> We provide a wide range of CCTV cameras, from basic analog cameras to the most advanced digital IP cameras.
-				Our CCTV systems provide businesses with a comprehensive security solution that is reliable, cost effective and easy to use. We also provide comprehensive maintenance and technical support services to ensure your system is always running optimally</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            <p> We provide a wide range of CCTV cameras, from basic analog cameras to the most advanced digital IP cameras.</p>
+                            <a class="small fw-medium" id="read-more-button">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+			    <div id="read-more-content">Our CCTV systems provide businesses with a comprehensive security solution that is reliable, cost effective and easy to use. We also provide comprehensive maintenance and technical support services to ensure your system is always running optimally</div>
                         </div>
                     </div>
                 </div>
@@ -778,6 +778,13 @@ Solar energy is clean and green. Solar energy creates no air or water pollution,
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- ReadMore Javascript -->
+    <script>
+        document.getElementById('read-more-button').addEventListener('click', function() {
+        document.getElementById('read-more-content').style.display = 'block';
+    });
+    </script>
 </body>
 
 </html>
